@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+
+}
+
+body{
+    background-color: rgb(0, 0, 114);
+
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+
+}
+
+.player, .scores, .controls {
+    text-align: center;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+}
+
+.player,.reset-button {
+    margin-top: 8vw;
+
+}
+
+.scores {
+    
+    background-color: black;
+    width: 15vw;
+    margin: 5vw auto 1vw auto;
+    font-size: 12vw;
+    color: brown;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.player {
+    color: blanchedalmond;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.control-button {
+    
+    margin-top: 4vh;
+    width: 4vw;
+    padding: 4px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(73, 73, 255);
+    font-size: 1vw;
+    border-radius: 5px;
+}
+
+#resets {
+    width: 8vw;
+    padding: 4px;
+    color: blanchedalmond;
+    background-color: brown;
+    font-weight: bold;
+}
+
+.control-button:focus {
+    background-color: black;
+}
+
+#resets:focus {
+    background-color: rgb(241, 90, 90);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Score Board</title>
+</head>
+<body>
+    <div class="app"></div>
+    <main class="wrapper">
+        <h1>BASKETBALL SCORE BOARD</h1>
+        <div class="scoreboard">
+            <div class="player">HOME</div>
+            <div class="player">GUEST</div>
+            <div class="scores" id="home-score">0</div>
+            <div class="scores" id="guest-score">0</div>
+            <div class="controls">
+                <button class="control-button" onclick="increaseHomeScore()">+</button>
+                <button class="control-button" onclick="decreaseHomeScore()">-</button>
+            </div>
+
+            <div class="controls">
+                <button class="control-button" onclick="increaseGuestScore()">+</button>
+                <button class="control-button" onclick="decreaseGuestScore()">-</button>
+            </div>
+        </div>
+        <div class="reset-button">
+            <button id="resets" type="reset" onclick="reset()">RESET</button>
+        </div>  
+    </main>  
+    <script src="index.js"></script>
+</body>
+</html>
